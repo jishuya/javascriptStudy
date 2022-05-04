@@ -1,23 +1,27 @@
-const myNumberTag = document.getElementById('myNumber');
-const decreaseBtn = document.getElementById('decrease');
-const increaseBtn = document.getElementById('increase');
+const btn = document.getElementsByClassName('myBtn')[0]
+// console.log(3333, btn)
+// btn.onclick = ()=>{ console.log(1111); alert('Hi');}
 
-let myNumber = +myNumberTag.textContent;
+// const myNumberTag = document.getElementById('myNumber');
+// const decreaseBtn = document.getElementById('decrease');
+// const increaseBtn = document.getElementById('increase');
 
-decreaseBtn.onclick = function() {
-  myNumber--;
-  myNumberTag.textContent = myNumber;
-};
+// let myNumber = +myNumberTag.textContent;
 
-increaseBtn.onclick = function() {
-  myNumber++;
-  myNumberTag.textContent = myNumber;
-};
+// decreaseBtn.onclick = function() {
+//   myNumber--;
+//   myNumberTag.textContent = myNumber;
+// };
 
-const colorBtns = document.getElementsByClassName('color-btn');
+// increaseBtn.onclick = function() {
+//   myNumber++;
+//   myNumberTag.textContent = myNumber;
+// };
 
-for (let btn of colorBtns) {
-  btn.onclick = function() {
-    myNumberTag.style.color = btn.dataset.color;
-  };
-}
+// const colorBtns = document.getElementsByClassName('color-btn');
+
+// for (let btn of colorBtns) {
+//   btn.onclick = function() {
+//     myNumberTag.style.color = btn.dataset.color;
+//   };
+// }
